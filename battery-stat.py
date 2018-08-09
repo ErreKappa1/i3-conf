@@ -1,8 +1,5 @@
+#!/usr/bin/env python
 from subprocess import check_output
-
-# colors
-color_red = '$(tput setaf 1)$(tput bold)'
-color_yellow = '$(tput setaf 1)$(tput bold)'
 
 ac_adaptor = str()
 battery = str()
