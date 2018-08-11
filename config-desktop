@@ -165,7 +165,3 @@ exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/osx-leopard-blue
 
 # Keyboard layouts
 exec --no-startup-id setxkbmap -layout us,ru -variant intl, -option grp:alt_shift_toggle
-
-# Automatic DHCP wireless connection
-exec --no-startup-id sudo wpa_supplicant -B -i wlp4s0 -c /home/hyd3l/.wpa_supplicant/casa.conf
-exec --no-startup-id sudo dhcpcd -4 -q -t 30 -L wlp4s0
