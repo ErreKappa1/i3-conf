@@ -160,6 +160,12 @@ bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 5%-
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 5%+
 bindsym XF86AudioMicMute exec --no-startup-id amixer -q set Capture toggle
 
+# FN Keys (drevo mechanical keyboard)
+bindsym XF86Explorer exec nemo
+bindsym XF86HomePage exec firefox
+bindsym XF86Calculator exec gnome-calculator
+bindsym XF86Tools exec vlc
+
 # Compositor (compton)
 exec_always --no-startup-id compton
 
