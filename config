@@ -139,7 +139,7 @@ bar {
     font pango:Hack Regular Mono 8
     status_command i3blocks -c .config/i3/i3blocks.conf
     colors {
-        background #000000
+        background #000A3F
         statusline #FFFFFF
     }
 }
