@@ -17,7 +17,7 @@
 ;==========================================================
 
 [colors]
-background = #0000000
+background = #A0000000
 background-alt = #0000000
 foreground = #FFF
 foreground-alt = #555
@@ -30,6 +30,7 @@ dim-value = 1.0
 width = 100%
 height = 22
 radius = 0.0
+bottom = false
 fixed-center = false
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -187,8 +188,8 @@ type = internal/battery
 battery = BAT0
 adapter = AC
 full-at = 98
-label-charging =  %percentage%%
-label-discharging =   %percentage%%
+label-charging =  %percentage%% %time%
+label-discharging =   %percentage%% %time%
 label-full =  %percentage%%
 
 [module/temperature]
