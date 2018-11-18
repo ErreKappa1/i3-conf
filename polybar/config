@@ -47,7 +47,7 @@ font-2 = "Font Awesome 5 Free Solid:style=Solid:size=10;3"
 font-3 = "Font Awesome 5 Free Regular:style=Regular:size=10;3"
 modules-left = bspwm i3
 modules-center = 
-modules-right = cpu temperature memory filesystem eth wlan pulseaudio xbacklight xkeyboard battery date
+modules-right = cpu temperature memory filesystem eth wlan tethering pulseaudio xbacklight xkeyboard battery date
 tray-position = right
 tray-padding = 2
 cursor-click = pointer
@@ -153,7 +153,7 @@ label-connected =  %local_ip%
 
 [module/tethering]
 type = internal/network
-interface = enp0s25u1
+interface = enp0s20u1
 interval = 5
 label-connected =  %local_ip%
 
