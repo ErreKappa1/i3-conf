@@ -160,10 +160,10 @@ label-connected =  %local_ip%
 
 [module/date]
 type = internal/date
-interval = 5
-date = %d %b %Y
-time = %H:%M
-label =  %date% %time%
+interval = 1
+date = %b %d, %Y
+time = %H:%M:%S %Z
+label =  %date%   %time%
 
 [module/pulseaudio]
 type = internal/pulseaudio
