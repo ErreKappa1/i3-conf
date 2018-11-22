@@ -61,7 +61,9 @@ label = %title:0:30:...%
 [module/xkeyboard]
 type = internal/xkeyboard
 blacklist-0 = num lock
+format = <label-indicator> <label-layout>
 label-layout =  %layout%
+label-indicator = 
 
 [module/filesystem]
 type = internal/fs
@@ -194,6 +196,7 @@ label-full =  %percentage%%
 
 [module/temperature]
 type = internal/temperature
+interval = 2
 thermal-zone = 0
 warn-temperature = 80
 label =  %temperature-c%
