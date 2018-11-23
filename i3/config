@@ -6,7 +6,6 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id xfce4-terminal
-bindsym XF86Launch1 exec --no-startup-id xfce4-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -131,7 +130,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Floating window max size
-floating_maximum_size 1366x768
+floating_maximum_size 640x480
 
 # Disable window borders
 for_window [class="^.*"] border pixel 0
@@ -160,20 +159,22 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 5%+
 bindsym XF86AudioMicMute exec --no-startup-id amixer -q set Capture toggle
 
 # FN Keys (drevo mechanical keyboard)
-bindsym XF86Explorer exec nemo
 bindsym XF86HomePage exec firefox
-bindsym XF86Calculator exec gnome-calculator
-bindsym XF86Tools exec vlc
 
 # Compositor (compton)
 exec_always --no-startup-id compton
 
+# File Manager (pcmanfm=
+bindsym $mod+p exec --no-startup-id pcmanfm
+
 # Desktop background
-exec_always --no-startup-id feh --bg-fill ~/Pictures/thinkpad-x230-blue-bartop.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/arch-mountains.png
 
 # Keyboard layouts
-exec --no-startup-id setxkbmap -layout us,ru -variant intl, -option grp:alt_shift_toggle
+exec_always --no-startup-id setxkbmap -layout it
 
-# Nemo
-bindsym $mod+n exec --no-startup-id nemo
+# Quello schifo di NetworkManager asd
+exec --no-startup-id nm-applet
+
+
 

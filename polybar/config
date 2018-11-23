@@ -48,7 +48,7 @@ font-2 = "Font Awesome 5 Free Solid:style=Solid:size=10;3"
 font-3 = "Font Awesome 5 Free Regular:style=Regular:size=10;3"
 modules-left = bspwm i3
 modules-center = 
-modules-right = cpu temperature memory filesystem eth wlan tethering pulseaudio xbacklight xkeyboard battery date
+modules-right = cpu temperature memory filesystem  pulseaudio xbacklight battery date
 tray-position = right
 tray-padding = 2
 cursor-click = pointer
@@ -61,9 +61,7 @@ label = %title:0:30:...%
 [module/xkeyboard]
 type = internal/xkeyboard
 blacklist-0 = num lock
-format = <label-indicator> <label-layout>
 label-layout =  %layout%
-label-indicator = 
 
 [module/filesystem]
 type = internal/fs
@@ -139,33 +137,27 @@ label =  %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 5
-label =  %gb_used% / %gb_total%
+label =  %mb_used% / %mb_total%
 format-prefix-foreground = ${colors.foreground-alt}
 
 [module/wlan]
 type = internal/network
-interface = wlp3s0
+interface = wlp2s0
 interval = 5
 label-connected =  %local_ip%
 
 [module/eth]
 type = internal/network
-interface = enp0s25
+interface = enp1s0
 interval = 5
 label-connected =  %local_ip%
 
-[module/tethering]
-type = internal/network
-interface = enp0s20u1
-interval = 5
-label-connected =  %local_ip%
-
 [module/date]
 type = internal/date
-interval = 1
-date = %a %b %d, %Y
-time = %H:%M:%S %Z
-label =  %date%   %time%
+interval = 5
+date = %d %b %Y
+time = %H:%M
+label =  %date% %time%
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -173,7 +165,7 @@ format-volume = <label-volume> <bar-volume>
 label-volume =  %percentage%%
 label-volume-foreground = ${root.foreground}
 label-muted = 
-label-muted-foreground = ${colors.foreground-alt}
+label-muted-foreground = #F64C4C
 bar-volume-width = 10
 bar-volume-foreground = #fff
 bar-volume-gradient = false
@@ -196,7 +188,6 @@ label-full =  %percentage%%
 
 [module/temperature]
 type = internal/temperature
-interval = 2
 thermal-zone = 0
 warn-temperature = 80
 label =  %temperature-c%

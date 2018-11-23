@@ -8,4 +8,7 @@ My i3-gaps configuration files.
 - otf-font-awesome
 ## Screenshot
 Here's how it looks like:
-![alt text](https://raw.githubusercontent.com/Hyd3L/i3-conf/master/img/screenshot.png)
+![alt text](https://raw.githubusercontent.com/ErreKappa1/i3-conf/master/img/screenshot.png)
+
+Many thanks to @Hyd3L for sharing its config file.
+
