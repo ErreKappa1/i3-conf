@@ -163,7 +163,7 @@ label-connected =  %local_ip%
 [module/date]
 type = internal/date
 interval = 1
-date = %b %d, %Y
+date = %a %b %d, %Y
 time = %H:%M:%S %Z
 label =  %date%   %time%
 
