@@ -10,5 +10,5 @@ My i3-gaps configuration files.
 Here's how it looks like:
 ![alt text](https://raw.githubusercontent.com/ErreKappa1/i3-conf/master/img/screenshot.png)
 
-Many thanks to @Hyd3L for sharing its config file.
+Many thanks to [Hyd3L](https://github.com/Hyd3L) for sharing his config file.
 
